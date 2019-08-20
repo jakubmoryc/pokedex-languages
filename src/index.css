@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.sidenav---sidenav---_2tBP {
+    background: #1B1C1D;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+    background: #262626;
 }
+
+.pushFromSidebar {
+    margin-left: 64px;
+}
+
+.biggerText {
+    font-size: 1.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem !important;
+  }
+/* Start of specific classes */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 64px;
+}
+
+#search {
+    width: 30%;
+}
+
+#display {
+    padding: 1rem;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+}
+
+.cardTitle > .languages {
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardTitle > .languages > .language {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.language img {
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.cardButton {
+    width: 30%;
+    justify-self: center;
+}
+
