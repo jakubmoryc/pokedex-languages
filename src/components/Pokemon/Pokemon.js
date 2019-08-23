@@ -10,6 +10,7 @@ import es from '../../icons/spain.svg'
 import jp from '../../icons/japan.svg'
 import ko from '../../icons/south-korea.svg'
 import cn from '../../icons/china.svg'
+import fr from '../../icons/france.svg'
 
 export default function Pokemon() {
     return (
@@ -56,6 +57,10 @@ export default function Pokemon() {
                                     <div className="language">
                                         <img src={cn} alt=''/>
                                         罗丝雷朵
+                                    </div>
+                                    <div className="language">
+                                        <img src={fr} alt=''/>
+                                        Roserade
                                     </div>
                                 </div>
                             </div> 

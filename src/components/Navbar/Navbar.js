@@ -11,7 +11,7 @@ export default function Navbar(props) {
                 <form id="search" className="pushFromSidebar">
                     <InputGroup>
                         <InputGroupAddon className="prepend" addonType="prepend">
-                            #
+                            {Number.isInteger(parseInt(props.value)) ? "#" : "@"}
                         </InputGroupAddon>
                         <Input 
                             placeholder="number or name" 
