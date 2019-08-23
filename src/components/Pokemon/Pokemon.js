@@ -30,31 +30,31 @@ export default function Pokemon() {
                                 </div>
                                 <div className="languages"> {/*This is flexed */}
                                     <div className="language"> {/*This is flexed */}
-                                        <img src={uk}/>
+                                        <img src={uk} alt=''/>
                                         Roserade
                                     </div>
                                     <div className="language">
-                                        <img src={jp}/>
+                                        <img src={jp} alt=''/>
                                         ロズレイド
                                     </div>
                                     <div className="language">
-                                        <img src={de}/>
+                                        <img src={de} alt=''/>
                                         Roserade
                                     </div>
                                     <div className="language">
-                                        <img src={it}/>
+                                        <img src={it} alt=''/>
                                         Roserade
                                     </div>
                                     <div className="language">
-                                        <img src={es}/>
+                                        <img src={es} alt=''/>
                                         Roserade
                                     </div>
                                     <div className="language">
-                                        <img src={ko}/>
+                                        <img src={ko} alt=''/>
                                         로즈레이드
                                     </div>
                                     <div className="language">
-                                        <img src={cn}/>
+                                        <img src={cn} alt=''/>
                                         罗丝雷朵
                                     </div>
                                 </div>
