@@ -39,10 +39,19 @@ class App extends React.Component {
           }
         })
       }
-      
+      else {
+        pokemonActual[counter].id = element.pokemon_species_id
+        pokemonActual[counter].sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${counter}.png`
+        counter = counter + 1
+        this.state.languages.forEach((e) => {
+          if(element.local_language_id === e.id) {
+            pokemonActual[counter][e.iso3166] = element.name
+          }
+        })
+      }
+      console.log(pokemonActual)
     })
     
-    console.log(pokemonActual)
   }
 
  render() {
