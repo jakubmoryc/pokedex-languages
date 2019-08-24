@@ -8,10 +8,13 @@ export default function Navbar(props) {
     return (
         <nav>
             <NavbarBootstrap className="navbar" color="dark" padding="3">
-                <form id="search" className="pushFromSidebar">
+                <form 
+                    id="search" 
+                    className="pushFromSidebar"
+                    onSubmit={props.submitHandler}>
                     <InputGroup>
                         <InputGroupAddon className="prepend" addonType="prepend">
-                            {Number.isInteger(parseInt(props.value)) ? "#" : "@"}
+                            @
                         </InputGroupAddon>
                         <Input 
                             placeholder="number or name" 

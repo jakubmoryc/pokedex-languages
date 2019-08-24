@@ -1,5 +1,4 @@
 const POKEMON_DATA = [
-    {},
     {
       jp: 'フシギダネ',
       kr: '이상해씨',
@@ -9673,3 +9672,5 @@ const POKEMON_DATA = [
       sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/806.png'
     }
   ]
+
+  export default POKEMON_DATA

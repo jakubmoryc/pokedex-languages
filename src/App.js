@@ -5,14 +5,26 @@ import Sidebar from './components/Sidebar/Sidebar'
 import Display from './components/Display/Display';
 
 import POKEMON_DATA from './data/data'
-{/* WARNING: THE FIRST ELEMENT OF ABOVE ARRAY IS EMPTY */}
+/* WARNING: THE FIRST ELEMENT OF ABOVE ARRAY IS EMPTY */
 
 
 class App extends React.Component {
   state = {
     inputValue: '',
-    pokemonData: POKEMON_DATA 
+    pokemonData: POKEMON_DATA,
+    results: []
   }
+  
+  componentDidMount = () => {
+
+  }
+
+  getResults = () => {
+    return this.state.pokemonData.filter(item => {
+      return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
+     })
+  }
+
 
   handleChange = (e) => {
     this.setState({
@@ -20,16 +32,23 @@ class App extends React.Component {
     })
   }
 
-  componentDidMount = () => {
-
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.setState({
+      results: this.getResults(),
+    })
   }
+
 
  render() {
   return (
     <div className="App"> 
-      <Navbar formHandler={this.handleChange} value={this.state.inputValue}/>  
+      <Navbar 
+        formHandler={this.handleChange}
+        submitHandler={this.handleSubmit}
+        value={this.state.inputValue}/>  
       <Sidebar/>
-      <Display/>
+      <Display results={this.state.results}/>
     </div>
   );
  }

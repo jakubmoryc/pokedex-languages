@@ -20,7 +20,7 @@ export default function Pokemon() {
                     <Card className="mb-1" body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
                         <CardTitle>
                             <div class="cardTitle"> {/*This is flexed */}
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png"></img>
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png" alt='roserade'></img>
                                 <div className="cardInfo">
                                     <p className="biggerText">
                                         Roserade
