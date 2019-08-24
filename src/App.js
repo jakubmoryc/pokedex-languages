@@ -20,9 +20,14 @@ class App extends React.Component {
   }
 
   getResults = () => {
-    return this.state.pokemonData.filter(item => {
-      return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
-     })
+    if(!this.state.inputValue) {
+      return []
+    }
+    else {
+      return this.state.pokemonData.filter(item => {
+        return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
+       })
+    }
   }
 
 

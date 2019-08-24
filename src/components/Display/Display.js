@@ -8,7 +8,9 @@ export default function Display({results}) {
     return (
         <div id="display" className="pushFromSidebar">
             <Container>
-                <Pokemon/>
+                {results.map(pokemon => {
+                    return <Pokemon/>
+                })}
             </Container>
         </div>
     )
