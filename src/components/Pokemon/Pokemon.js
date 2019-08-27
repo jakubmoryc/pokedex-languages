@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Card, Button, CardTitle} from 'reactstrap';
 import { Row, Col } from 'reactstrap';
+import Img from 'react-image'
 
 import uk from '../../icons/united-kingdom.svg'
 import de from '../../icons/germany.svg'
@@ -20,7 +21,11 @@ export default function Pokemon({pokemonData}) {
                     <Card className="mb-1" body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
                         <CardTitle>
                             <div class="cardTitle"> {/*This is flexed */}
-                                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`} alt='roserade'></img>
+                                <Img 
+                                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`} 
+                                    alt={`${pokemonData.us}`}
+                                >
+                                    </Img>
                                 <div className="cardInfo">
                                     <p className="biggerText">
                                         <img className="smallerIcon" src={uk} alt=''/>

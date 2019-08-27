@@ -20,17 +20,28 @@ class App extends React.Component {
 
   getResults = () => {
     if(!this.state.inputValue) {
+      this.fakeLoad()
       return []
-      
     }
     else {
       let result = this.state.pokemonData.filter(item => {
         return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
        })
+       this.fakeLoad()
        return result;
     }
   }
 
+  fakeLoad = () => {
+    this.setState({
+      isLoading: true
+    })
+    setTimeout(() => {
+      this.setState({
+        isLoading: false
+      })
+    },300)
+  }
 
   handleChange = (e) => {
     this.setState({
@@ -54,7 +65,10 @@ class App extends React.Component {
         submitHandler={this.handleSubmit}
         value={this.state.inputValue}/>  
       <Sidebar/>
-      <Display results={this.state.results}/>
+      <Display 
+        results={this.state.results}
+        isLoading={this.state.isLoading}
+      />
     </div>
   );
  }
