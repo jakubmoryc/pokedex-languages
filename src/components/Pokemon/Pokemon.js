@@ -8,11 +8,11 @@ import de from '../../icons/germany.svg'
 import it from '../../icons/italy.svg'
 import es from '../../icons/spain.svg'
 import jp from '../../icons/japan.svg'
-import ko from '../../icons/south-korea.svg'
+import kr from '../../icons/south-korea.svg'
 import cn from '../../icons/china.svg'
 import fr from '../../icons/france.svg'
 
-export default function Pokemon() {
+export default function Pokemon({pokemonData}) {
     return (
         <div>
             <Row>
@@ -20,47 +20,44 @@ export default function Pokemon() {
                     <Card className="mb-1" body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
                         <CardTitle>
                             <div class="cardTitle"> {/*This is flexed */}
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png" alt='roserade'></img>
+                                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonData.id}.png`} alt='roserade'></img>
                                 <div className="cardInfo">
                                     <p className="biggerText">
-                                        Roserade
+                                        <img className="smallerIcon" src={uk} alt=''/>
+                                        {pokemonData.us}
                                     </p>
-                                    <h4>
-                                        #407
-                                    </h4>
+                                    <h1>
+                                        #{pokemonData.id}
+                                    </h1>
                                 </div>
                                 <div className="languages"> {/*This is flexed */}
                                     <div className="language"> {/*This is flexed */}
-                                        <img src={uk} alt=''/>
-                                        Roserade
+                                        <img className="icon" src={jp} alt=''/> 
+                                        {pokemonData.jp}
                                     </div>
                                     <div className="language">
-                                        <img src={jp} alt=''/>
-                                        ロズレイド
+                                        <img className="icon" src={de} alt=''/>
+                                        {pokemonData.de}
                                     </div>
                                     <div className="language">
-                                        <img src={de} alt=''/>
-                                        Roserade
+                                        <img className="icon" src={fr} alt=''/>
+                                        {pokemonData.fr}
                                     </div>
                                     <div className="language">
-                                        <img src={it} alt=''/>
-                                        Roserade
+                                        <img className="icon" src={it} alt=''/>
+                                        {pokemonData.it}
                                     </div>
                                     <div className="language">
-                                        <img src={es} alt=''/>
-                                        Roserade
+                                        <img className="icon" src={es} alt=''/>
+                                        {pokemonData.es}
                                     </div>
                                     <div className="language">
-                                        <img src={ko} alt=''/>
-                                        로즈레이드
+                                        <img className="icon" src={kr} alt=''/>
+                                        {pokemonData.kr}
                                     </div>
                                     <div className="language">
-                                        <img src={cn} alt=''/>
-                                        罗丝雷朵
-                                    </div>
-                                    <div className="language">
-                                        <img src={fr} alt=''/>
-                                        Roserade
+                                        <img className="icon" src={cn} alt=''/>
+                                        {pokemonData.cn}
                                     </div>
                                 </div>
                             </div> 

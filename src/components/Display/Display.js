@@ -9,7 +9,9 @@ export default function Display({results}) {
         <div id="display" className="pushFromSidebar">
             <Container>
                 {results.map(pokemon => {
-                    return <Pokemon/>
+                    return <Pokemon
+                                pokemonData={pokemon}
+                            />
                 })}
             </Container>
         </div>

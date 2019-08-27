@@ -5,14 +5,13 @@ import Sidebar from './components/Sidebar/Sidebar'
 import Display from './components/Display/Display';
 
 import POKEMON_DATA from './data/data'
-/* WARNING: THE FIRST ELEMENT OF ABOVE ARRAY IS EMPTY */
-
 
 class App extends React.Component {
   state = {
     inputValue: '',
     pokemonData: POKEMON_DATA,
-    results: []
+    results: [],
+    isLoading: false
   }
   
   componentDidMount = () => {
@@ -22,11 +21,13 @@ class App extends React.Component {
   getResults = () => {
     if(!this.state.inputValue) {
       return []
+      
     }
     else {
-      return this.state.pokemonData.filter(item => {
+      let result = this.state.pokemonData.filter(item => {
         return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
        })
+       return result;
     }
   }
 
