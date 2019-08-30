@@ -2,9 +2,11 @@
   "name": "pokedex-languages",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/PogChampion/pokedexlanguages",
   "dependencies": {
     "@trendmicro/react-sidenav": "^0.4.5",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-image": "^2.2.0",
@@ -12,6 +14,8 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
