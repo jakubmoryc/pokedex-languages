@@ -2,7 +2,7 @@
   "name": "pokedex-languages",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/PogChampion/pokedexlanguages",
+  "homepage": "https://pogchampion.github.io/pokedexlanguages2/",
   "dependencies": {
     "@trendmicro/react-sidenav": "^0.4.5",
     "bootstrap": "^4.3.1",

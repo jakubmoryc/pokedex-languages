@@ -15,7 +15,7 @@ export default function NoResults() {
                     Type in a Pokémon's name/number
                 </p>
                 <img 
-                    src={img}
+                    src={img} alt=''
                 />
             </Jumbotron>
         </div>

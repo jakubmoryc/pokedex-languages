@@ -15,7 +15,7 @@ export default function Display({results, isLoading}) {
                     <NoResults/>
                 </div>
             )
-        } else if (isLoading == true) {
+        } else if (isLoading === true) {
             return (
                 <div id="display" className={styleClasses}>
                     <LoadingScreen/>

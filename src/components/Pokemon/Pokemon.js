@@ -67,6 +67,13 @@ export default function Pokemon({pokemonData}) {
                                 </div>
                             </div> 
                         </CardTitle>
+                        <Button 
+                            className="bg-white text-dark cardButton"
+                            onClick={e => {
+                                window.open(`https://www.pokemon.com/uk/pokedex/${pokemonData.id}`)
+                            }}>
+                            See on wiki
+                        </Button>
                     </Card>
                 </Col>
             </Row>

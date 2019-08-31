@@ -20,6 +20,7 @@ body {
 .smallerIcon {
     height: 20px;
     margin-right: 0.5rem;
+    margin-bottom: 7px;
 }
 
 .cardButton {
@@ -42,6 +43,12 @@ body {
 .centerAll {
     text-align: center;
 }
+
+.fullWidthImg {
+    width: 100%;
+    height: auto;
+}
+
 
 /* Start of specific classes */
 
@@ -99,6 +106,10 @@ body {
     padding-left: 0;
 
     width: 175px;
+}
+
+.cardButton {
+    width: 10vw;
 }
 
 .centerContentScreen {
