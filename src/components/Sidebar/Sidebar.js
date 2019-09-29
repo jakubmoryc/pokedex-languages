@@ -10,7 +10,6 @@ export default function Sidebar() {
     
     const toggle = () => {
         setModal(!modal)
-        console.log(modal)
     }
     return (
         <div>
@@ -22,13 +21,13 @@ export default function Sidebar() {
                             <button 
                                 className="btn" 
                                 onClick={() => {
-                                    window.open('https://bulbapedia.bulbagarden.net/wiki/List_of_characters_in_other_languages')
+                                    window.open('https://bulbapedia.bulbagarden.net/wiki/Category:Pages_in_other_languages')
                                 }}>
                                 <i class="fas fa-list"></i>   
                             </button>
                         </NavIcon>
                         <NavText>
-                            See full list 
+                            <a rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/Category:Pages_in_other_languages" target="_blank">See full lists</a>
                         </NavText>
                     </NavItem>
                     <NavItem>
@@ -41,11 +40,17 @@ export default function Sidebar() {
                             </button>
                         </NavIcon>
                         <NavText>
-                            Info&Credits
+                            <a 
+                                href="#" 
+                                onClick={e => {
+                                    toggle();
+                                }}>
+                                   Info & Credits 
+                            </a>
                             <Modal isOpen={modal} toggle={toggle} className="text-dark bg-dark">
                                 <ModalHeader toggle={toggle}>Credits</ModalHeader>
                                 <ModalBody>
-                                    App created with the use of <a href="https://pokeapi.co" target="_blank">PokéAPI's</a> data and icons from <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>.
+                                    App created with the use of <a  rel="noopener noreferrer" href="https://pokeapi.co" target="_blank">PokéAPI's</a> data and icons from <a rel="noopener noreferrer" href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>.
                                     <img className="fullWidthImg" src="https://i.kym-cdn.com/photos/images/original/001/150/490/507.jpg" alt=''></img>
                                 </ModalBody>
                             </Modal>

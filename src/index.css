@@ -1,19 +1,19 @@
-
-/* Sidenav color */
-
-.sidenav---sidenav---_2tBP {
-    background: #1B1C1D;
-}
-
 /* HTML Tags */
 
 body {
     background: #262626;
     color: white;
+    transition-duration: 0.250;
 }
 
 p {
     margin: 0;
+}
+
+/* Sidenav color */
+
+.sidenav---sidenav---_2tBP {
+    background: #1B1C1D;
 }
 
 /* Generic classes */
