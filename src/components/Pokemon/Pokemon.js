@@ -36,33 +36,35 @@ export default function Pokemon({pokemonData}) {
                                     </h1>
                                 </div>
                                 <div className="languages"> {/*This is flexed */}
-                                    <div className="language"> {/*This is flexed */}
-                                        <img className="icon" src={jp} alt=''/> 
-                                        {pokemonData.jp}
-                                    </div>
-                                    <div className="language">
-                                        <img className="icon" src={de} alt=''/>
-                                        {pokemonData.de}
-                                    </div>
-                                    <div className="language">
-                                        <img className="icon" src={fr} alt=''/>
-                                        {pokemonData.fr}
-                                    </div>
-                                    <div className="language">
-                                        <img className="icon" src={it} alt=''/>
-                                        {pokemonData.it}
-                                    </div>
-                                    <div className="language">
-                                        <img className="icon" src={es} alt=''/>
-                                        {pokemonData.es}
-                                    </div>
-                                    <div className="language">
-                                        <img className="icon" src={kr} alt=''/>
-                                        {pokemonData.kr}
-                                    </div>
-                                    <div className="language">
-                                        <img className="icon" src={cn} alt=''/>
-                                        {pokemonData.cn}
+                                    <div className="languagesWrapper">
+                                        <div className="language"> {/*This is flexed */}
+                                            <img className="icon" src={jp} alt=''/> 
+                                            <p>{pokemonData.jp}</p>
+                                        </div>
+                                        <div className="language">
+                                            <img className="icon" src={de} alt=''/>
+                                            <p>{pokemonData.de}</p>
+                                        </div>
+                                        <div className="language">
+                                            <img className="icon" src={fr} alt=''/>
+                                            <p>{pokemonData.fr}</p>
+                                        </div>
+                                        <div className="language">
+                                            <img className="icon" src={it} alt=''/>
+                                            <p>{pokemonData.it}</p>
+                                        </div>
+                                        <div className="language">
+                                            <img className="icon" src={es} alt=''/>
+                                            <p>{pokemonData.es}</p>
+                                        </div>
+                                        <div className="language">
+                                            <img className="icon" src={kr} alt=''/>
+                                            <p>{pokemonData.kr}</p>
+                                        </div>
+                                        <div className="language">
+                                            <img className="icon" src={cn} alt=''/>
+                                            <p>{pokemonData.cn}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div> 

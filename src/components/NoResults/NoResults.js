@@ -7,7 +7,7 @@ import { Jumbotron,} from 'reactstrap';
 export default function NoResults() {
     return (
         <div className="centerContentScreen">
-            <Jumbotron className="darkerBg centerAll">
+            <Jumbotron className="noResults darkerBg centerAll">
                 <h1 className="display-3">
                     No results so far...
                 </h1>

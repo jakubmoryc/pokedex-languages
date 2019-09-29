@@ -1,11 +1,22 @@
+
+/* Sidenav color */
+
 .sidenav---sidenav---_2tBP {
     background: #1B1C1D;
 }
+
+/* HTML Tags */
 
 body {
     background: #262626;
     color: white;
 }
+
+p {
+    margin: 0;
+}
+
+/* Generic classes */
 
 .mb-1 {
     margin-bottom: 0.25rem !important;
@@ -50,7 +61,7 @@ body {
 }
 
 
-/* Start of specific classes */
+/* Specific classes */
 
 .navbar {
     display: flex;
@@ -87,14 +98,15 @@ body {
     align-items: center;
 }
 
-.cardTitle > .languages > .language {
+.cardTitle > .languages > .languagesWrapper {
     flex: 1;
+    height: 100%;
 
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-
+    text-align: center;
 }
 
 .cardInfo {
@@ -128,3 +140,52 @@ body {
     margin-bottom: 10vh;
 }
 
+/* Media queries */ 
+
+@media (max-width: 1150px) {
+    .cardButton {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cardTitle > .languages {
+        justify-content: center;
+        align-items: center;
+    }
+    .cardTitle > .languages > .languagesWrapper {
+        flex-flow: column nowrap;
+        flex: initial;
+        align-items: flex-start;
+    }
+    .language {
+        display: flex;
+    }
+    .icon {
+        margin-right: 5px;
+        width: 20px;
+        height: auto;
+        justify-self: flex-start;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #search {
+        width: initial;
+    }
+    .cardTitle {
+        flex-flow: column nowrap;
+    }
+    .cardInfo {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .noResults > h1 {
+        font-size: 3rem;
+    }
+}
+    
+    

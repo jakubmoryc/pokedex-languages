@@ -16,7 +16,8 @@ export default function Navbar(props) {
                         <InputGroupAddon className="prepend" addonType="prepend">
                             @
                         </InputGroupAddon>
-                        <Input 
+                        <Input
+                            className="searchInput" 
                             placeholder="number or name" 
                             value={props.value}
                             onChange={props.formHandler}
