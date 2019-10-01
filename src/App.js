@@ -13,10 +13,6 @@ class App extends React.Component {
     results: [],
     isLoading: false
   }
-  
-  componentDidMount = () => {
-
-  }
 
   getResults = () => {
     if(!this.state.inputValue) {
@@ -24,11 +20,17 @@ class App extends React.Component {
       return []
     }
     else {
-      let result = this.state.pokemonData.filter(item => {
-        return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
-       })
-       this.fakeLoad()
-       return result;
+      if(+this.state.inputValue) { // Check whether its a number
+        this.fakeLoad()
+        return this.state.pokemonData.filter(item => {
+          return item.id === +this.state.inputValue
+        })
+      } else {
+        this.fakeLoad()
+        return this.state.pokemonData.filter(item => {
+          return item.us.toLowerCase().includes(this.state.inputValue.toLowerCase())
+        })
+      }
     }
   }
 

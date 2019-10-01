@@ -28,6 +28,7 @@ export default function Display({results, isLoading}) {
                         {results.map(pokemon => {
                             return <Pokemon
                                         pokemonData={pokemon}
+                                        key={pokemon.id}
                                     />
                         })}
                     </Container>
