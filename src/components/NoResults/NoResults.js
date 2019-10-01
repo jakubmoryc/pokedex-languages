@@ -1,6 +1,6 @@
 import React from 'react'
 
-import img from '../../img/budew_monochrome.png'
+import img from '../../img/budew.png'
 
 import { Jumbotron,} from 'reactstrap';
 

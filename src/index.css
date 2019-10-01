@@ -109,6 +109,10 @@ p {
     text-align: center;
 }
 
+.cardTitle > .languages > .languagesWrapper > .language {
+    flex: 1;
+}
+
 .cardInfo {
     display: flex;
     flex-flow: column nowrap;
@@ -171,6 +175,12 @@ p {
 }
 
 @media (max-width: 600px) {
+    .centerContentScreen, #display {
+        padding: 0;
+    }
+    .noResults {
+        width: 100%;
+    }
     #search {
         width: initial;
     }
@@ -184,8 +194,15 @@ p {
 
 @media (max-width: 400px) {
     .noResults > h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+    .noResults img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 350px) {
+    
 }
     
     

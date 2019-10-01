@@ -74,7 +74,7 @@ export default function Pokemon({pokemonData}) {
                             onClick={e => {
                                 window.open(`https://www.pokemon.com/uk/pokedex/${pokemonData.id}`)
                             }}>
-                            See on wiki
+                            <i class="fas fa-book-open"></i> See Pokédex entry
                         </Button>
                     </Card>
                 </Col>
