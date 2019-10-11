@@ -59,12 +59,16 @@ export default function Sidebar() {
                     </NavItem>
                     <NavItem>
                         <NavIcon>
-                            <button className="btn">
-                                <i class="fab fa-github"></i>
+                            <button 
+                                className="btn" 
+                                onClick={() => {
+                                    window.open('https://github.com/jakubmoryc/pokedex-languages')
+                                }}>
+                                <i class="fab fa-github"></i>  
                             </button>
                         </NavIcon>
                         <NavText>
-                            GitHub
+                            <a rel="noopener noreferrer" href="https://github.com/jakubmoryc/pokedex-languages" target="_blank">GitHub</a>
                         </NavText>
                     </NavItem>
                 </SideNav.Nav>
