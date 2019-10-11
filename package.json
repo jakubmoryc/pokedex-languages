@@ -1,8 +1,8 @@
 {
   "name": "pokedex-languages",
   "version": "0.1.0",
+  "homepage": "https://jakubmoryc.github.io/pokedex-languages/.",
   "private": true,
-  "homepage": "https://pogchampion.github.io/pokedexlanguages2/",
   "dependencies": {
     "@trendmicro/react-sidenav": "^0.4.5",
     "bootstrap": "^4.3.1",

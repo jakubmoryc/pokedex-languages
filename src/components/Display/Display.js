@@ -20,18 +20,12 @@ class Display extends React.Component {
             return (
                 <div id="display" className={styleClasses}>
                     <NoResults/>
-                    <ScrollToTop
-                        scrollFunction={this.scrollToTop}
-                    />
                 </div>
             )
         } else if (this.props.isLoading === true) {
             return (
                 <div id="display" className={styleClasses}>
                     <LoadingScreen/>
-                    <ScrollToTop
-                        scrollFunction={this.scrollToTop}
-                    />
                 </div>
             )
         } else {
