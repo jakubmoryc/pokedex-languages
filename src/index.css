@@ -10,12 +10,6 @@ p {
     margin: 0;
 }
 
-/* Sidenav color */
-
-.sidenav---sidenav---_2tBP {
-    background: #1B1C1D;
-}
-
 /* Generic classes */
 
 .mb-1 {
@@ -67,6 +61,7 @@ p {
     display: flex;
     justify-content: center;
     height: 64px;
+    background: #222222!important;
 }
 
 #search {
