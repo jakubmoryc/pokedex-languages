@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6eeaaa6a59cef689efbba68b33eff8f6",
+    "revision": "d2c33a62dcd313a33086a5d524df6c13",
     "url": "/pokedex-languages/./index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pokedex-languages/./static/css/2.629e5187.chunk.css"
   },
   {
-    "revision": "3a8ff50ba563cfb57159",
-    "url": "/pokedex-languages/./static/css/main.4f871438.chunk.css"
+    "revision": "616420643959647ad4c8",
+    "url": "/pokedex-languages/./static/css/main.d5787a7c.chunk.css"
   },
   {
     "revision": "a488872532f7672bf239",
     "url": "/pokedex-languages/./static/js/2.13b8326f.chunk.js"
   },
   {
-    "revision": "3a8ff50ba563cfb57159",
+    "revision": "616420643959647ad4c8",
     "url": "/pokedex-languages/./static/js/main.3b65d1ca.chunk.js"
   },
   {
