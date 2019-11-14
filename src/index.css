@@ -10,6 +10,7 @@ p {
     margin: 0;
 }
 
+
 /* Generic classes */
 
 .mb-1 {
@@ -138,6 +139,41 @@ p {
 
     margin-bottom: 10vh;
 }
+
+/* Modal */
+
+.modal-header {
+    border-color: rgba(0,0,0,.2);
+    background: #db3d44;
+    color: white;
+}
+
+.modal-header span {
+    color: white;
+}
+
+.modal-body {
+    background: #db3d44;
+    color: white;
+}
+
+.modal-body img {
+    background: #db3d44;
+    color: white;
+    border-radius: .3rem;
+}
+
+.modal-body a {
+    color: white;
+    text-decoration: underline;
+    transition-duration: 250ms;
+}
+
+.modal-body a:hover {
+    color: rgb(200, 200, 200);
+}
+
+/* Scroll icon */
 
 #scroll-to-top {
     position: fixed; /* Fixed/sticky position */
